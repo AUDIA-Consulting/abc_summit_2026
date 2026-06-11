@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Leadership Summit | ABC Home and Commercial Services | June 29-30, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #F6A623;
+  --gold-light: #FFD166;
+  --gold-dark: #C17F00;
+  --amber: #E85D04;
+  --honey: #FFBA08;
+  --cream: #FFF8E7;
+  --warm-white: #FAF3E0;
+  --teal: #14B8A6;
+  --black: #0A0A0A;
+  --charcoal: #141414;
+  --slate: #1E1E1E;
+  --muted: #9CA3AF;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--black);
+  color: var(--cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+.honeycomb-bg {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='150' viewBox='0 0 84 150'%3E%3Cg fill='none' stroke='%23F6A623' stroke-width='1.5'%3E%3Cpath d='M42 0L84 25v50L42 100 0 75V25L42 0z'/%3E%3Cpath d='M42 50L84 75v50l-42 25L0 125V75l42-25z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 84px 150px;
+}
+.gradient-mesh {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(246, 166, 35, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(232, 93, 4, 0.1) 0%, transparent 40%),
+    radial-gradient(ellipse at 70% 80%, rgba(20, 184, 166, 0.08) 0%, transparent 40%),
+    radial-gradient(ellipse at 10% 70%, rgba(255, 186, 8, 0.1) 0%, transparent 50%);
+}
+.hex {
+  position: fixed; width: 60px; height: 69px; z-index: -1; pointer-events: none;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--amber) 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  opacity: 0.06;
+  animation: float 20s ease-in-out infinite;
+}
+.hex.h1 { top: 12%; left: 6%; width: 80px; height: 92px; }
+.hex.h2 { top: 55%; left: 91%; animation-delay: -5s; width: 50px; height: 58px; }
+.hex.h3 { top: 28%; left: 86%; animation-delay: -10s; width: 100px; height: 115px; }
+.hex.h4 { top: 80%; left: 8%; animation-delay: -15s; width: 70px; height: 81px; }
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-20px) rotate(5deg); }
+  75% { transform: translateY(20px) rotate(-5deg); }
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 36px; }
+header { text-align: center; padding: 100px 24px 70px; position: relative; }
+.hero-badge {
+  display: inline-flex; align-items: center; padding: 12px 30px;
+  background: linear-gradient(135deg, rgba(246, 166, 35, 0.2) 0%, rgba(232, 93, 4, 0.1) 100%);
+  border: 1px solid rgba(246, 166, 35, 0.4); border-radius: 50px;
+  font-size: 0.95rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 32px; transition: all 0.3s ease;
+}
+.hero-badge:hover {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.25) 0%, rgba(13, 148, 136, 0.15) 100%);
+  border-color: var(--teal); color: var(--teal); transform: translateY(-2px);
+}
+h1 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 700; line-height: 1.06; text-wrap: balance;
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 45%, var(--amber) 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.7rem;
+  color: var(--cream); opacity: 0.9; margin-bottom: 30px; text-wrap: balance;
+}
+.hero-meta { color: var(--muted); font-size: 1.12rem; line-height: 2; }
+.hero-meta strong { color: var(--cream); font-weight: 600; }
+.quote {
+  position: relative; max-width: 940px; margin: 72px auto 0; padding: 52px 60px 42px;
+  background: linear-gradient(135deg, rgba(246, 166, 35, 0.16) 0%, rgba(232, 93, 4, 0.08) 100%);
+  border: 1px solid rgba(246, 166, 35, 0.45); border-radius: 18px; text-align: center;
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem); font-weight: 600; line-height: 1.4;
+  text-wrap: balance;
+  background-clip: padding-box;
+  box-shadow: 0 20px 70px rgba(246, 166, 35, 0.14), inset 0 1px 0 rgba(255, 209, 102, 0.15);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+.quote .q-text {
+  background: linear-gradient(135deg, var(--warm-white) 0%, var(--gold-light) 55%, var(--gold) 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.quote::before {
+  content: '\201C'; position: absolute; top: -46px; left: 50%; transform: translateX(-50%);
+  font-family: 'Cormorant Garamond', serif; font-style: normal; font-size: 7rem; line-height: 1;
+  color: var(--gold); text-shadow: 0 0 30px rgba(246, 166, 35, 0.5);
+}
+.quote:hover {
+  transform: translateY(-5px); border-color: var(--gold);
+  box-shadow: 0 28px 90px rgba(246, 166, 35, 0.22), inset 0 1px 0 rgba(255, 209, 102, 0.2);
+}
+.quote .q-text { display: block; }
+.quote .attr { display: block; margin-top: 18px; font-family: 'DM Sans', sans-serif;
+  font-style: normal; font-weight: 700; font-size: 0.98rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold);
+  -webkit-text-fill-color: var(--gold); background: none; }
+@media (max-width: 600px) { .quote { padding: 40px 26px 32px; } }
+section { padding: 52px 0; }
+.s-label {
+  font-size: 0.92rem; font-weight: 700; letter-spacing: 3.5px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 12px; display: flex; align-items: center; gap: 14px;
+}
+.s-label::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(246,166,35,0.5), transparent); }
+h2 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(2.3rem, 4.5vw, 3.2rem);
+  font-weight: 600; color: var(--warm-white); margin-bottom: 30px; text-wrap: balance;
+}
+.obj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.obj {
+  background: var(--charcoal); border: 1px solid rgba(246, 166, 35, 0.18); border-radius: 14px;
+  padding: 28px 30px; transition: border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+.obj:hover {
+  border-color: rgba(246, 166, 35, 0.6); transform: translateY(-5px);
+  box-shadow: 0 14px 40px rgba(246, 166, 35, 0.12), 0 0 0 1px rgba(246, 166, 35, 0.1);
+}
+.obj h3 { font-size: 1.22rem; font-weight: 700; color: var(--gold-light); margin-bottom: 8px; text-wrap: balance; transition: color 0.3s ease; }
+.obj:hover h3 { color: var(--honey); }
+.obj p { font-size: 1.04rem; color: var(--muted); text-wrap: pretty; }
+.day-head { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.day-date { font-size: 1.08rem; color: var(--muted); letter-spacing: 0.5px; }
+.tl { border-left: 2px solid rgba(246, 166, 35, 0.3); margin-left: 9px; padding-left: 0; }
+.slot {
+  position: relative; padding: 14px 18px 32px 42px; border-radius: 0 14px 14px 0;
+  transition: background 0.3s ease;
+}
+.slot:hover { background: rgba(246, 166, 35, 0.045); }
+.slot::before {
+  content: ''; position: absolute; left: -9px; top: 26px; width: 16px; height: 18px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--amber) 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.slot:hover::before { transform: scale(1.35); filter: drop-shadow(0 0 8px rgba(246, 166, 35, 0.7)); }
+.slot.light::before { background: rgba(246, 166, 35, 0.35); }
+.time { font-size: 0.95rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
+.slot h3 { font-size: 1.55rem; font-weight: 700; color: var(--warm-white); margin-bottom: 10px; text-wrap: balance; }
+.slot .desc { font-size: 1.1rem; color: var(--cream); opacity: 0.85; margin-bottom: 12px; max-width: 920px; text-wrap: pretty; }
+.points { list-style: none; max-width: 920px; }
+.points li {
+  position: relative; padding: 9px 10px 9px 32px; font-size: 1.05rem; color: var(--muted);
+  border-bottom: 1px solid rgba(255, 248, 231, 0.06); text-wrap: pretty;
+  border-radius: 6px; transition: background 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
+}
+.points li:hover { background: rgba(246, 166, 35, 0.07); color: var(--cream); padding-left: 38px; }
+.points li:last-child { border-bottom: none; }
+.points li::before { content: '\2B22'; position: absolute; left: 4px; top: 9px; font-size: 0.68rem; color: var(--gold-dark); transition: color 0.25s ease, left 0.25s ease; }
+.points li:hover::before { color: var(--gold); left: 10px; }
+.points li strong { color: var(--cream); font-weight: 600; }
+.flex-tag {
+  display: inline-block; margin-left: 12px; padding: 3px 14px; border-radius: 50px;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
+  background: rgba(20, 184, 166, 0.15); border: 1px solid rgba(20, 184, 166, 0.4); color: var(--teal);
+  vertical-align: middle;
+}
+.pair-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; max-width: 920px; margin-top: 12px; }
+.pair {
+  background: var(--slate); border: 1px solid rgba(246, 166, 35, 0.18); border-radius: 12px;
+  padding: 18px 22px; font-size: 1.04rem;
+  transition: border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+.pair:hover {
+  border-color: rgba(20, 184, 166, 0.6); transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(20, 184, 166, 0.12);
+}
+.pair .rnd { font-size: 0.82rem; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+.pair div { color: var(--cream); padding: 2px 0; }
+.note {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(13, 148, 136, 0.05) 100%);
+  border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 14px; padding: 22px 30px;
+  font-size: 1.05rem; color: var(--cream); text-wrap: pretty;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.note:hover { border-color: rgba(20, 184, 166, 0.6); box-shadow: 0 10px 30px rgba(20, 184, 166, 0.1); }
+.note strong { color: var(--teal); }
+footer {
+  margin-top: 60px; padding: 48px 24px 70px; text-align: center;
+  border-top: 1px solid rgba(246, 166, 35, 0.2); color: var(--muted); font-size: 0.98rem; line-height: 2;
+}
+footer .f-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold); }
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .slot { padding-left: 30px; padding-right: 8px; }
+  .wrap { padding: 0 22px; }
+}
+</style>
+</head>
+<body>
+<div class="honeycomb-bg"></div>
+<div class="gradient-mesh"></div>
+<div class="hex h1"></div><div class="hex h2"></div><div class="hex h3"></div><div class="hex h4"></div>
+
+<header>
+  <div class="hero-badge">The Hive and the Honey · 2026</div>
+  <h1>Executive Leadership Summit</h1>
+  <p class="hero-sub">Tending the hive together: three markets, two generations, one family</p>
+  <div class="hero-meta">
+    <strong>Double Eagle Ranch</strong> · 6141 E FM 1431, Marble Falls, TX 78654<br>
+    <strong>Monday, June 29 &amp; Tuesday, June 30, 2026</strong><br>
+    Bobby &amp; Bo · Raleigh &amp; Dylan · Dennis &amp; Russell<br>
+    Facilitated by Brian Audia
+  </div>
+  <div class="quote">
+    <span class="q-text">The purpose of a beehive is not to make honey. Honey is the byproduct of a healthy hive.</span>
+    <span class="attr">Seth Godin, The Song of Significance</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <div class="s-label">Why We Gather</div>
+  <h2>Summit Objectives</h2>
+  <div class="obj-grid">
+    <div class="obj"><h3>Financial Reports &amp; Discussion</h3><p>Each market presents its full dashboard: a holistic picture of the business, not just revenue and sales.</p></div>
+    <div class="obj"><h3>Trade Counsel as Peers</h3><p>Three biggest wins and the two or three biggest challenges in each market, with the group's counsel on the table.</p></div>
+    <div class="obj"><h3>Update Succession Plans</h3><p>Every transition looks different than the last time we were at the ranch. Realign on timelines and advisory boards.</p></div>
+    <div class="obj"><h3>Discover Shared Leverage</h3><p>A discovery conversation on centralization: marketing, the website, fleet, purchasing power, and back of house.</p></div>
+    <div class="obj"><h3>Advance Customer Success</h3><p>Review the year's training arc to date and preview where Q3 and the annual meeting take it next.</p></div>
+    <div class="obj"><h3>Invest Across Generations</h3><p>Dedicated uncle and cousin time, health accountability, and deeper mentorship across the family.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="s-label">Day One</div>
+  <div class="day-head"><h2>Monday, June 29</h2><span class="day-date">Afternoon &amp; Evening</span></div>
+  <div class="tl">
+
+    <div class="slot light">
+      <div class="time">3:00 PM</div>
+      <h3>Arrival at the Ranch</h3>
+      <p class="desc">Settle in, catch up, and get situated before the first session.</p>
+    </div>
+
+    <div class="slot">
+      <div class="time">3:30 - 4:00 PM</div>
+      <h3>Welcome &amp; Opening Check-In</h3>
+      <ul class="points">
+        <li>Summit objectives and the shape of the next two days</li>
+        <li>Quick personal check-in around the table: family, summer, and life since the last call</li>
+      </ul>
+    </div>
+
+    <div class="slot">
+      <div class="time">4:00 - 5:30 PM</div>
+      <h3>APL Reports: Business Updates &amp; Dashboards</h3>
+      <p class="desc">Thirty minutes per market. Each presents its monthly dashboard for a total picture of the business: revenue and margin by division, retention, turnover, call volume, safety, and customer scores.</p>
+      <ul class="points">
+        <li><strong>Austin:</strong> month two of the new operations structure, operational KPIs taking root across divisions, marketing transition under Greg, and the call volume challenge</li>
+        <li><strong>Dallas:</strong> finalized financials and fixed-asset work for true profitability, the earliest 2027 budget in company history, and department-specific growth targets</li>
+        <li><strong>Houston:</strong> best profit year on record, commercial carrying growth, Orlando expansion, and the Salesforce conversion reset</li>
+      </ul>
+    </div>
+
+    <div class="slot light">
+      <div class="time">5:30 - 7:30 PM</div>
+      <h3>Dinner</h3>
+      <p class="desc">Travel, eat, return. Family connection time, no agenda.</p>
+    </div>
+
+    <div class="slot">
+      <div class="time">7:30 - 8:00 PM</div>
+      <h3>Review &amp; Preview: 2026 Training Focus on Customer Success</h3>
+      <p class="desc">A thirty-minute checkpoint on the year's leadership development arc before the roundtable.</p>
+      <ul class="points">
+        <li><strong>Q1 review, Perfecting the Comb:</strong> the Brand Promise as North Star and serving one another as internal customers</li>
+        <li><strong>Q2 review, The Pollination:</strong> Moments of Magic in the home, and finding and eliminating friction</li>
+        <li><strong>Q3 preview, The Sweetness We Leave Behind:</strong> legacy, advocacy, and graceful recovery</li>
+        <li><strong>Annual meeting preview, The Honey Harvest:</strong> the Q4 capstone in Marble Falls and what we want managers to do differently by then</li>
+      </ul>
+    </div>
+
+    <div class="slot">
+      <div class="time">8:00 - 10:30 PM</div>
+      <h3>Wins &amp; Challenges Roundtable</h3>
+      <p class="desc">The heart of the summit: forty-five minutes per market. Each brings its three biggest wins and the why behind them, then its two or three biggest challenges, with the floor open for the group's counsel.</p>
+      <ul class="points">
+        <li><strong>Format per market:</strong> fifteen minutes on the three biggest wins and what made them possible, then thirty minutes on the biggest challenges, the current plan, and open counsel from the table</li>
+        <li><strong>Open counsel:</strong> each leader may put one obstacle for the back half of the year on the table for the group's input</li>
+        <li><strong>Cross-pollination:</strong> capture every practice worth stealing across markets: fleet, safety, marketing, pricing, and personnel</li>
+        <li><strong>Close:</strong> fifteen minutes to name the common threads across all three markets</li>
+      </ul>
+    </div>
+
+    <div class="slot">
+      <div class="time">10:30 - 11:00 PM</div>
+      <h3>Longevity &amp; Health: The Accountability Circle <span class="flex-tag">Flex · If Energy Allows</span></h3>
+      <p class="desc">A nightcap conversation. If the roundtable runs long, this moves to the porch or to Tuesday's lunch.</p>
+      <ul class="points">
+        <li>Personal health goals on the table: where each of us stands and where we want to be</li>
+        <li>Making accountability real: permission to challenge one another between gatherings</li>
+        <li>How we support our fathers' health, energy, and pursuits outside the business</li>
+        <li>Follow-up from last time: wearables, sleep, and what is actually working</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="s-label">Day Two</div>
+  <div class="day-head"><h2>Tuesday, June 30</h2><span class="day-date">Early Start · Hard Stop at 11:30 AM</span></div>
+  <div class="tl">
+
+    <div class="slot light">
+      <div class="time">7:30 - 7:45 AM</div>
+      <h3>Coffee &amp; Reflections from Monday</h3>
+      <p class="desc">Brief insights from each family. Key themes and tone for the day.</p>
+    </div>
+
+    <div class="slot">
+      <div class="time">7:45 - 8:45 AM</div>
+      <h3>Succession &amp; Advisory Boards</h3>
+      <p class="desc">Everyone's transition looks different than it did the last time we were at the ranch. Each family gives an update, then we discuss as a group.</p>
+      <ul class="points">
+        <li><strong>Dallas:</strong> where the timeline stands now and what it means for the advisory board structure</li>
+        <li><strong>Houston:</strong> the building sale, what it unlocks, and Raleigh's next chapter</li>
+        <li><strong>Austin:</strong> Bo's new role, managing the team beneath him, and the structure that follows</li>
+        <li><strong>Group question:</strong> has anyone's management structure changed for the other side of the transition?</li>
+      </ul>
+    </div>
+
+    <div class="slot">
+      <div class="time">8:45 - 9:30 AM</div>
+      <h3>Centralization Discovery: Where Does Shared Scale Make Sense?</h3>
+      <p class="desc">A discovery conversation, not a commitment. Ground rule: even learning what each market does differently counts as a win, and this conversation deserves a regular seat at the ranch.</p>
+      <ul class="points">
+        <li><strong>Marketing as the first domino:</strong> the Forshaw precedent, economies of scale, and the shared-CMO question</li>
+        <li><strong>Fleet:</strong> leasing versus owning, buying power, and what each market has learned</li>
+        <li><strong>Back of house:</strong> insurance and benefits, accounting, HR, and purchasing: where redundancy costs us</li>
+        <li><strong>Ground rules:</strong> shared assets get shared strategy; independent operations stay independent by choice, not by drift</li>
+      </ul>
+    </div>
+
+    <div class="slot light">
+      <div class="time">9:30 - 9:45 AM</div>
+      <h3>Break</h3>
+    </div>
+
+    <div class="slot">
+      <div class="time">9:45 - 10:15 AM</div>
+      <h3>The Website: Our One Shared Asset</h3>
+      <p class="desc">Continuing the conversation from the audit and third-party consultation, with all six at the table.</p>
+      <ul class="points">
+        <li>Findings from the website audit and where the consultation landed</li>
+        <li>A unified SEO effort for a shared asset: what it would take and who leads</li>
+        <li>Do our current vendors have the capability to take us to the next revenue tier?</li>
+      </ul>
+    </div>
+
+    <div class="slot">
+      <div class="time">10:15 - 11:15 AM</div>
+      <h3>Uncle &amp; Cousin Investment Time</h3>
+      <p class="desc">Two thirty-minute rotations pairing each cousin with an uncle.</p>
+      <div class="pair-grid">
+        <div class="pair"><div class="rnd">Round One · 10:15</div><div>Bo with Dennis</div><div>Dylan with Bobby</div><div>Russell with Raleigh</div></div>
+        <div class="pair"><div class="rnd">Round Two · 10:45</div><div>Bo with Raleigh</div><div>Dylan with Dennis</div><div>Russell with Bobby</div></div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="time">11:15 - 11:30 AM</div>
+      <h3>Final Circle: Commitments &amp; Calendaring</h3>
+      <ul class="points">
+        <li>Two key takeaways per family</li>
+        <li>Follow-ups with one owner and one date each</li>
+        <li>Calendar: upcoming Cousins Calls, the Q4 Honey Harvest manager training in Marble Falls, and 2027 summit dates</li>
+      </ul>
+    </div>
+
+    <div class="slot light">
+      <div class="time">11:30 AM</div>
+      <h3>Depart for Lunch</h3>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="note"><strong>Draft for review.</strong> This agenda goes to Bo, Dylan, and Russell first. Once the three confirm, it circulates to the full group of six.</div>
+</section>
+
+</div>
+
+<footer>
+  <div class="f-brand">The Hive and the Honey</div>
+  ABC Home &amp; Commercial Services · Executive Leadership Summit · June 29-30, 2026<br>
+  Prepared for the ABC ownership group · Facilitated by Brian Audia · qzr.ai
+</footer>
+
+</body>
+</html>
